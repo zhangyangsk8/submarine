@@ -1,0 +1,6 @@
+target 'submarine' do
+use_frameworks!
+pod 'RazzleDazzle'
+end
+
+
