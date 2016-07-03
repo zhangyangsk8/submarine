@@ -37,12 +37,12 @@
 /* Begin PBXFileReference section */
 		0A3F99E3B67F4D87635B3A79 /* Pods_submarine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_submarine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1882BCC81D21732A00004A7B /* submarine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = submarine.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1882BCCB1D21732A00004A7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1882BCCB1D21732A00004A7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = submarine/AppDelegate.swift; sourceTree = "<group>"; };
 		1882BCCD1D21732A00004A7B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1882BCD01D21732A00004A7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1882BCD21D21732A00004A7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1882BCD21D21732A00004A7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = submarine/Assets.xcassets; sourceTree = "<group>"; };
 		1882BCD51D21732A00004A7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		1882BCD71D21732A00004A7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1882BCD71D21732A00004A7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = submarine/Info.plist; sourceTree = "<group>"; };
 		1882BCDC1D21732A00004A7B /* submarineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = submarineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1882BCE01D21732A00004A7B /* submarineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = submarineTests.swift; sourceTree = "<group>"; };
 		1882BCE21D21732A00004A7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -82,11 +82,13 @@
 		1882BCBF1D21732A00004A7B = {
 			isa = PBXGroup;
 			children = (
+				1882BCFA1D21FFE700004A7B /* storyBoards */,
 				1882BCCA1D21732A00004A7B /* submarine */,
 				1882BCDF1D21732A00004A7B /* submarineTests */,
 				1882BCEA1D21732A00004A7B /* submarineUITests */,
 				1882BCC91D21732A00004A7B /* Products */,
 				1C3BDA02FBE0A0FA8E1F089E /* Pods */,
+				1882BCF91D21FF4400004A7B /* otherFile */,
 				1F3AD8CDB0CE63072C2C9C0B /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -104,12 +106,7 @@
 		1882BCCA1D21732A00004A7B /* submarine */ = {
 			isa = PBXGroup;
 			children = (
-				1882BCCB1D21732A00004A7B /* AppDelegate.swift */,
 				1882BCCD1D21732A00004A7B /* ViewController.swift */,
-				1882BCCF1D21732A00004A7B /* Main.storyboard */,
-				1882BCD21D21732A00004A7B /* Assets.xcassets */,
-				1882BCD41D21732A00004A7B /* LaunchScreen.storyboard */,
-				1882BCD71D21732A00004A7B /* Info.plist */,
 			);
 			path = submarine;
 			sourceTree = "<group>";
@@ -130,6 +127,25 @@
 				1882BCED1D21732A00004A7B /* Info.plist */,
 			);
 			path = submarineUITests;
+			sourceTree = "<group>";
+		};
+		1882BCF91D21FF4400004A7B /* otherFile */ = {
+			isa = PBXGroup;
+			children = (
+				1882BCCB1D21732A00004A7B /* AppDelegate.swift */,
+				1882BCD21D21732A00004A7B /* Assets.xcassets */,
+				1882BCD71D21732A00004A7B /* Info.plist */,
+			);
+			name = otherFile;
+			sourceTree = "<group>";
+		};
+		1882BCFA1D21FFE700004A7B /* storyBoards */ = {
+			isa = PBXGroup;
+			children = (
+				1882BCCF1D21732A00004A7B /* Main.storyboard */,
+				1882BCD41D21732A00004A7B /* LaunchScreen.storyboard */,
+			);
+			name = storyBoards;
 			sourceTree = "<group>";
 		};
 		1C3BDA02FBE0A0FA8E1F089E /* Pods */ = {
@@ -374,6 +390,7 @@
 				1882BCD01D21732A00004A7B /* Base */,
 			);
 			name = Main.storyboard;
+			path = submarine;
 			sourceTree = "<group>";
 		};
 		1882BCD41D21732A00004A7B /* LaunchScreen.storyboard */ = {
@@ -382,6 +399,7 @@
 				1882BCD51D21732A00004A7B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = submarine;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

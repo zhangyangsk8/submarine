@@ -8,13 +8,20 @@
 
 import UIKit
 
+import Alamofire
+
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-//        sssssss
-//        sssss
+        
+//        let urlStringGetBooks = "https://api.douban.com/v2/book/search"
+        
+        
+       
+        
     }
 
     override func didReceiveMemoryWarning() {
